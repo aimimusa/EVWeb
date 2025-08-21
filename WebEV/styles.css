@@ -161,7 +161,7 @@ a:hover {
 
 /* --- Section 2: Services --- */
 .section2 {
-    background-color: white;
+    background-color: #fbf7fb; /* Light purple tint */
 }
 .services-container {
   display: flex;
@@ -204,7 +204,7 @@ a:hover {
 
 .services-grid .service-item {
     padding: 2.5rem;
-    background-color: #f8f9fa;
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     text-align: center;
@@ -237,7 +237,7 @@ a:hover {
 
 /* --- Section 3: Contact & About --- */
 .section3 {
-  background-color: #f8f9fa;
+  background-color: white;
   text-align: center;
 }
 
@@ -259,15 +259,21 @@ a:hover {
 .contact-info, .contact-form {
   flex: 1;
   min-width: 300px;
-  background-color: white;
+  background-color: #f17126;
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  color: white;
+}
+
+.contact-info a {
+    color: white;
 }
 
 .contact-info h3, .contact-form h3 {
   font-size: 1.8rem;
   margin-bottom: 1em;
+  color: white;
 }
 
 .contact-info p {
@@ -290,6 +296,12 @@ a:hover {
   font-family: 'Lato', sans-serif;
   width: 100%;
   transition: border-color 0.3s, box-shadow 0.3s;
+  color: #2c3e50;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #666;
 }
 
 .contact-form input:focus,
@@ -297,6 +309,15 @@ a:hover {
     outline: none;
     border-color: #a34394;
     box-shadow: 0 0 0 2px rgba(163, 67, 148, 0.2);
+}
+
+.contact-form .button {
+    background-color: #a34394;
+    color: white;
+}
+
+.contact-form .button:hover {
+    background-color: #893780;
 }
 
 .map-container {
