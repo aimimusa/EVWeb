@@ -194,28 +194,45 @@ a:hover {
   color: #666;
 }
 
-.services-right {
-  flex: 1.2;
-  min-width: 300px;
-  display: flex;
-  flex-direction: column;
+/* New services grid styling */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    flex: 1.2;
 }
 
-.service-item {
-  font-size: 1.1rem;
-  font-weight: 500;
-  padding: 20px;
-  border-bottom: 1px solid #e0e0e0;
-  transition: background-color 0.3s, border-left 0.3s;
-  border-left: 3px solid transparent;
-}
-.service-item:first-child {
-    border-top: 1px solid #e0e0e0;
-}
-
-.service-item:hover {
+.services-grid .service-item {
+    padding: 2.5rem;
     background-color: #f8f9fa;
-    border-left: 3px solid #a34394; /* Primary brand color */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-grid .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.service-icon {
+    font-size: 3rem; /* Adjusted for Font Awesome icons */
+    margin: 0 auto 1rem;
+    color: #a34394;
+    display: block; /* Ensures icon is centered */
+}
+
+.service-item h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
 }
 
 /* --- Section 3: Contact & About --- */
